@@ -1,16 +1,17 @@
+import java.util.*;
 public class Hung{
-	public static void main(String[] args){
-		int isHungry = 1;
-		String food = "おにぎり";
-		System.out.println("こんにちわ");
-		if(isHungry == 0){
-			System.out.println("お腹がいっぱいです");
+	public static void main(String[] arg){
+		System.out.println("お腹が空いていますか？");
+		System.out.println("はい:１少しだけ:2いいえ:3");
+		int hung = new Scanner(System.in).nextInt();
+		String food ="ハンバーガー";
+		String drink ="コーラ";
+		if(hung == 1){
+		System.out.println(food + "と" + drink +"をどうぞ");
+		}else if(hung == 2){
+		System.out.println(drink +"をどうぞ");
 		}else{
-			System.out.println("腹ペコです");}
-		if(isHungry == 1){
-			System.out.println(food + "をいただきます");}
-
-			System.out.println("ごちそうさまでした");
+		System.out.println("さようなら…");
 		}
-
 	}
+}
