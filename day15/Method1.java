@@ -13,27 +13,26 @@ public class Method1{
 		}
 		int price = 2800;
 		int tax =10;
-		int taxIn = calcTaxIn(price,tax);
-		System.out.printf("低下%d%円税率d%%の税込価格は%d円です%n",price,tax,taxIn);
+		int taxIn =calcTaxIn(price,tax); 
+		System.out.printf("定価%d円税率%d%%の税込価格は%d円です。",price,tax,taxIn);
 		System.out.print("身長(cm)>>");
 		double height=new Scanner(System.in).nextDouble();
-
-		System.out.print("体重(Kg)>>");
+		System.out.print("体重(kg)>>");
 		double weight=new Scanner(System.in).nextDouble();
 		double bmi = calcBMI(weight,height);
 		System.out.printf("BMI:%.2f%n",bmi);
 	}
-	//メインメソッドの外に作る//↓引数(仮引数)
+
 	public static int maxOf(int a,int b){
 		return a > b ? a:b;
 	}
 	public static double calcTriangleArea(double bottom,double height){
 		double area = bottom * height /2;
-		return area;
+		return  area;
 	}
 	public static boolean isSame(int[] arr){
 		int first=arr[0];
-		for(int i =0;i<arr.length;i++){
+		for(int i=1;i<arr.length;i++){
 			if(first != arr[i]){
 				return false;
 			}
