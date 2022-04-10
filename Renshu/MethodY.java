@@ -12,7 +12,8 @@ public class MethodY{
 		String[] data =ym.split(",");
 		int[] n = new int[data.length];
 		for(int i =0;i<data.length;i++){
-			n[i] = Integer.parseInt(data[i]);
+			int h = Integer.parseInt(data[i]);
+			n[i] = h;
 		}
 		return n;
 	}
