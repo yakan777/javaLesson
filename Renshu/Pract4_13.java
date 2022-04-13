@@ -1,15 +1,16 @@
 import java.util.*;
 public class Pract4_13{
-	static void arrRevers(int[] data){
-		for(int i=0;i<data.length/2;i++){
-			int tmp = data[i];
-			data[i] = data[data.length-1-i];
-			data[data.length-1-i] = tmp;
+	static int[] timesArray(int[] arr,int times){
+		int[] retArr = new int[arr.length];
+		for(int i =0;i<retArr.length;i++){
+			retArr[i] = arr[i]*times;
 		}
-		System.out.println(Arrays.toString(data));
+		return retArr;
 	}
 	public static void main(String[] args){
-		int[] arr1= new int[]{1,2,3,4,5};
-		arrRevers(arr1);
+		int[] arr1 = new int[] {1,2,3};
+		int[] arr2 = timesArray(arr1,2);
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
 	}
 }
