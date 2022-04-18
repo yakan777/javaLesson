@@ -1,7 +1,18 @@
 public class Monkey{
+	/*フィールド変数*/
 	String name;
 	int age;
-
+	/*コンストラクター(constructor)*/
+	//public Monkey(){}
+	public Monkey(String name){
+		this.name=name;
+	}
+	public Monket(String name,int age){
+		this.name=name;
+		this.age=age;
+	}
+	/*メソッド*/
+	//挨拶をするメソッド
 	public void greet(){
 		System.out.println("こんにちは"+this.name+"("+this.age+"才)です。よろしく！");
 	}
