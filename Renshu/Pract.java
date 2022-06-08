@@ -8,4 +8,5 @@ public class Pract{
 		int sum =0;
 		return sum+=a+b;
 	}
+
 }
